@@ -1,0 +1,2354 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한국법학진흥원 연수원</title>
+<meta name="description" content="한국법학진흥원 부설 연수원. 평생교육법에 따른 평생학습시설로서 비학위과정·민간자격·전문가 과정을 운영합니다.">
+<meta name="theme-color" content="#9A0F1B">
+<meta property="og:title" content="한국법학진흥원 연수원">
+<meta property="og:description" content="평생학습시설 인가 준비 · 비학위과정 · 민간자격 · 전문가 과정">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://klaiedu.com/">
+<meta property="og:locale" content="ko_KR">
+<link rel="canonical" href="https://klaiedu.com/">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&family=Noto+Serif+KR:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<style>
+  /* ─────────────────────────────────────────────
+     한국법학진흥원 연수원 (klaiedu.com)
+     · 고려대학교 미래교육원 패턴 차용.
+     · 본원 klai.or.kr 와 동일 토큰. 와인색 메인 메뉴.
+     ───────────────────────────────────────────── */
+  :root{
+    --ink:#0A0A0A;
+    --ink-2:#2A2A2A;
+    --ink-3:#666;
+    --ink-4:#A8A8A8;
+    --line:#E5E5E3;
+    --line-2:#1F1F1F;
+    --bg:#FFFFFF;
+    --bg-2:#F5F5F2;
+    --bg-3:#EFEFEC;
+    --crimson:#9A0F1B;
+    --crimson-d:#7C0B14;
+    --crimson-tint:#F8EFF0;
+    --max:1240px;
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth; -webkit-text-size-adjust:100%}
+  body{
+    font-family:'Noto Sans KR',-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;
+    background:var(--bg); color:var(--ink); font-size:15px; line-height:1.7;
+    word-break:keep-all; -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit; text-decoration:none}
+  img,svg{display:block; max-width:100%}
+  ul,ol{list-style:none}
+  button{font-family:inherit; cursor:pointer; border:0; background:transparent}
+  input{font-family:inherit}
+  .serif{font-family:'Noto Serif KR', serif}
+
+  /* ── 상위 탭 바 ─────────────────────────────── */
+  .topbar{
+    background:#0A0A0A; color:#A8A8A8;
+    font-size:12px;
+  }
+  .topbar-in{
+    max-width:var(--max); margin:0 auto;
+    padding:0 32px;
+    display:flex; justify-content:space-between; align-items:center;
+    height:34px;
+  }
+  .sites{display:flex; gap:0; align-items:center; height:100%}
+  .sites a{
+    height:100%; padding:0 14px;
+    display:flex; align-items:center;
+    color:#888; transition:color .15s, background .15s;
+    border-right:1px solid #1A1A1A;
+  }
+  .sites a:first-child{
+    padding-left:0; padding-right:14px;
+    color:#fff; font-weight:600; font-size:12.5px;
+  }
+  .sites a.is-here{color:#fff; background:#1A1A1A; font-weight:500}
+  .sites a:hover{color:#fff}
+  .topbar-r{display:flex; gap:0; align-items:center; height:100%}
+  .topbar-r a{
+    height:100%; padding:0 12px;
+    display:flex; align-items:center;
+    color:#888; transition:color .15s;
+    border-left:1px solid #1A1A1A;
+  }
+  .topbar-r a:hover{color:#fff}
+
+  /* ── 메인 헤더 (큰 본원 워드마크 + 부제) ───── */
+  header{
+    background:#fff;
+    border-bottom:1px solid var(--line);
+  }
+  .head{
+    max-width:var(--max); margin:0 auto;
+    padding:22px 32px;
+    display:flex; align-items:center; gap:16px;
+  }
+  .brand-link{
+    display:inline-flex; align-items:center;
+    flex-shrink:0;
+  }
+  .brand-logo{
+    height:44px; width:auto;
+    display:block;
+  }
+  .brand-divider{
+    width:1px; height:34px;
+    background:var(--line);
+    flex-shrink:0;
+    margin:0 4px;
+  }
+  .brand-sub{
+    display:flex; flex-direction:column;
+    line-height:1.15; flex-shrink:0;
+  }
+  .brand-sub-ko{
+    font-family:'Noto Serif KR', serif;
+    font-size:19px; font-weight:600; color:var(--ink);
+    letter-spacing:-0.02em;
+  }
+  .brand-sub-en{
+    font-size:9.5px; font-weight:500; color:var(--ink-3);
+    letter-spacing:0.1em; margin-top:3px;
+    text-transform:uppercase;
+  }
+  .brand-tag{
+    margin-left:8px; align-self:center;
+    padding:5px 10px;
+    font-size:11.5px; color:var(--ink-3);
+    background:var(--bg-2); border:1px solid var(--line);
+    letter-spacing:-0.005em; white-space:nowrap;
+  }
+  .brand-tag strong{color:var(--crimson); font-weight:700}
+
+  .head-right{margin-left:auto; display:flex; align-items:center; gap:18px}
+  .head-link{
+    font-size:13px; color:var(--ink-3);
+    transition:color .15s;
+  }
+  .head-link:hover{color:var(--crimson)}
+  .head-search{
+    display:flex; align-items:center;
+    background:var(--bg-2); border:1px solid var(--line);
+    padding:5px 12px;
+  }
+  .head-search input{
+    border:0; background:transparent; outline:none;
+    width:130px; font-size:13px; color:var(--ink);
+  }
+  .head-search svg{width:14px; height:14px; color:var(--ink-3)}
+
+  /* ── 메인 메뉴 바 (와인색 풀폭) ────────────── */
+  .menubar{
+    background:var(--crimson);
+    position:sticky; top:0; z-index:90;
+    box-shadow:0 1px 0 rgba(0,0,0,.05);
+  }
+  .menubar-in{
+    max-width:var(--max); margin:0 auto;
+    display:flex; align-items:center;
+    height:54px;
+  }
+  .grid-toggle{
+    width:54px; height:54px;
+    display:flex; align-items:center; justify-content:center;
+    background:rgba(0,0,0,.18); color:#fff;
+    transition:background .15s;
+    flex-shrink:0;
+  }
+  .grid-toggle:hover{background:rgba(0,0,0,.32)}
+  .grid-toggle svg{width:22px; height:22px}
+
+  .main-nav{display:flex; height:100%; flex:1}
+  .main-nav > li{position:relative; height:100%}
+  .main-nav > li > a{
+    display:flex; align-items:center; height:100%;
+    padding:0 24px;
+    font-size:15px; font-weight:600; color:#fff;
+    letter-spacing:-0.014em; transition:background .15s;
+    position:relative; gap:6px;
+  }
+  .main-nav > li > a:hover,
+  .main-nav > li:hover > a{background:var(--crimson-d)}
+  .main-nav > li.is-home > a{padding-left:30px; padding-right:30px}
+  .main-nav > li.is-home svg{width:16px; height:16px; margin-right:2px}
+  .main-nav > li > a .pin{
+    display:inline-block;
+    padding:2px 6px; font-size:9.5px;
+    background:rgba(255,255,255,.22); color:#fff;
+    font-weight:700; letter-spacing:0.06em;
+    margin-left:4px;
+  }
+
+  /* 메가 메뉴: 호버 시 또는 :::토글 시 풀폭 펼침 */
+  .megamenu{
+    position:absolute; top:100%; left:0; right:0;
+    background:var(--crimson);
+    border-top:1px solid var(--crimson-d);
+    opacity:0; visibility:hidden;
+    transition:opacity .2s, visibility .2s;
+    z-index:100;
+  }
+  .megamenu.is-open{opacity:1; visibility:visible}
+  .megamenu-in{
+    max-width:var(--max); margin:0 auto;
+    padding:32px 32px 36px;
+    display:grid; grid-template-columns:repeat(7, 1fr);
+    gap:24px;
+  }
+  .mm-col h4{
+    font-size:13.5px; font-weight:700; color:#fff;
+    padding:6px 0 12px 14px; margin-bottom:12px;
+    border-bottom:1px solid rgba(255,255,255,.25);
+    letter-spacing:-0.012em;
+    position:relative;
+  }
+  .mm-col h4::before{
+    content:''; position:absolute;
+    left:0; top:10px; bottom:14px; width:3px;
+    background:rgba(255,255,255,.8);
+  }
+  .mm-col h4 .pin{
+    display:inline-block;
+    padding:2px 6px; font-size:9px;
+    background:rgba(255,255,255,.22); color:#fff;
+    font-weight:700; letter-spacing:0.06em;
+    margin-left:4px;
+  }
+  .mm-col ul li a{
+    display:block; padding:4px 12px 4px 14px;
+    font-size:12.5px; color:rgba(255,255,255,.85);
+    line-height:1.6;
+    transition:color .15s, padding-left .15s;
+  }
+  .mm-col ul li a:hover{color:#fff; padding-left:18px}
+  .mm-col ul li a::before{content:'· '; opacity:.65; margin-right:2px}
+
+  /* ── 우측 떠있는 Quick Menu ────────────────── */
+  .quick-fix{
+    position:fixed; right:24px; top:200px;
+    z-index:60;
+    background:#fff; border:1px solid var(--line);
+    width:138px;
+    box-shadow:0 6px 18px -8px rgba(0,0,0,.12);
+  }
+  .quick-fix .qf-title{
+    padding:10px 14px;
+    background:var(--ink); color:#fff;
+    font-size:11.5px; font-weight:700; letter-spacing:0.14em;
+    text-align:center;
+  }
+  .quick-fix a{
+    display:flex; align-items:center; gap:8px;
+    padding:11px 14px;
+    font-size:12.5px; color:var(--ink-2);
+    border-bottom:1px solid var(--line);
+    transition:background .15s, color .15s;
+  }
+  .quick-fix a:hover{background:var(--bg-2); color:var(--crimson)}
+  .quick-fix a svg{width:13px; height:13px; flex-shrink:0; color:var(--ink-3)}
+  .quick-fix a:hover svg{color:var(--crimson)}
+  .quick-fix .qf-top{
+    text-align:center; padding:9px 14px;
+    background:var(--bg-2); justify-content:center;
+    font-weight:600; font-size:11px; letter-spacing:0.14em;
+    color:var(--ink-3); cursor:pointer;
+  }
+  .quick-fix .qf-top:hover{color:var(--crimson)}
+
+  main{}
+
+  /* ── 1. 슬라이더 ────────────────────────────── */
+  .slider{
+    position:relative; overflow:hidden;
+    height:340px;
+    background:#1A1A1A;
+  }
+  .slides{
+    display:flex; height:100%;
+    transition:transform .55s ease;
+    width:300%;
+  }
+  .slide{
+    flex:1 0 33.333%; height:100%;
+    position:relative; overflow:hidden;
+    display:flex; align-items:center;
+  }
+  .slide-bg{
+    position:absolute; inset:0;
+    background-size:cover; background-position:center;
+    filter:brightness(.55) grayscale(.2);
+  }
+  .slide-1 .slide-bg{
+    background-image:url('assets/hero.jpg');
+  }
+  .slide-2 .slide-bg{
+    background:linear-gradient(135deg, #1A1414 0%, var(--crimson) 100%);
+  }
+  .slide-3 .slide-bg{
+    background:linear-gradient(135deg, #0A0A0A 0%, #2A2A2A 100%);
+  }
+  .slide-overlay{
+    position:absolute; inset:0;
+    background:linear-gradient(to right, rgba(0,0,0,.45) 0%, rgba(0,0,0,.15) 70%);
+  }
+  .slide-in{
+    position:relative; z-index:2;
+    max-width:var(--max); margin:0 auto;
+    padding:0 32px;
+    width:100%; color:#fff;
+  }
+  .slide-tag{
+    font-size:11.5px; letter-spacing:0.18em; font-weight:600;
+    color:rgba(255,255,255,.85); margin-bottom:14px;
+    text-transform:uppercase;
+  }
+  .slide h2{
+    font-family:'Noto Serif KR', serif;
+    font-size:clamp(28px, 3.8vw, 44px);
+    font-weight:600; line-height:1.3; letter-spacing:-0.022em;
+    color:#fff; max-width:680px;
+  }
+  .slide-sub{
+    font-size:14px; color:rgba(255,255,255,.78);
+    margin-top:14px; max-width:520px; line-height:1.7;
+  }
+  .slider-arrow{
+    position:absolute; top:50%; transform:translateY(-50%);
+    width:42px; height:42px;
+    background:rgba(255,255,255,.15); color:#fff;
+    border:1px solid rgba(255,255,255,.3);
+    display:flex; align-items:center; justify-content:center;
+    z-index:5; transition:background .15s;
+  }
+  .slider-arrow:hover{background:rgba(255,255,255,.28)}
+  .slider-arrow.prev{left:32px}
+  .slider-arrow.next{right:32px}
+  .slider-arrow svg{width:18px; height:18px}
+  .slider-dots{
+    position:absolute; bottom:24px; left:50%;
+    transform:translateX(-50%); z-index:5;
+    display:flex; gap:8px;
+  }
+  .slider-dots button{
+    width:8px; height:8px; border-radius:50%;
+    background:rgba(255,255,255,.4);
+    transition:background .15s, width .2s;
+  }
+  .slider-dots button.is-on{background:#fff; width:22px; border-radius:6px}
+
+  /* ── 2. 3-컬럼 메인 ─────────────────────────── */
+  .main-3col{
+    padding:50px 32px 70px;
+    background:#fff;
+  }
+  .col3-in{
+    max-width:var(--max); margin:0 auto;
+    display:grid; grid-template-columns:260px 1fr 220px;
+    gap:32px; align-items:start;
+  }
+
+  /* (A) 좌측 — 로그인 + 입학상담 */
+  .login-box{
+    background:#fff; border:1px solid var(--line);
+    margin-bottom:18px;
+  }
+  .login-head{
+    padding:14px 18px;
+    background:var(--bg-2);
+    border-bottom:1px solid var(--line);
+    display:flex; align-items:center; gap:8px;
+    font-size:13.5px; font-weight:700; color:var(--ink);
+    letter-spacing:-0.012em;
+  }
+  .login-head svg{width:14px; height:14px; color:var(--crimson)}
+  .login-body{padding:18px}
+  .login-body input{
+    width:100%; padding:9px 12px;
+    border:1px solid var(--line); background:#fff;
+    font-size:13px; margin-bottom:7px;
+    transition:border-color .15s;
+  }
+  .login-body input:focus{outline:none; border-color:var(--ink)}
+  .login-row{display:flex; gap:7px; align-items:stretch}
+  .login-row input{flex:1; margin-bottom:0}
+  .login-row .login-btn{
+    background:var(--ink); color:#fff;
+    border:0; padding:0 16px;
+    font-size:12.5px; font-weight:600;
+    display:flex; align-items:center; gap:5px;
+    transition:background .15s;
+  }
+  .login-row .login-btn:hover{background:var(--crimson)}
+  .login-row .login-btn svg{width:12px; height:12px}
+  .login-foot{
+    padding:12px 18px;
+    border-top:1px solid var(--line);
+    display:flex; gap:14px;
+    font-size:12px; color:var(--ink-3);
+  }
+  .login-foot a{
+    display:inline-flex; align-items:center; gap:5px;
+    transition:color .15s;
+  }
+  .login-foot a:hover{color:var(--crimson)}
+  .login-foot svg{width:11px; height:11px}
+
+  .contact-box{
+    background:var(--crimson-tint);
+    border:1px solid #E8D7D9;
+    padding:18px 18px 20px;
+  }
+  .contact-head{
+    display:flex; align-items:center; gap:8px;
+    font-size:13.5px; font-weight:700; color:var(--crimson);
+    margin-bottom:14px; letter-spacing:-0.012em;
+  }
+  .contact-head svg{width:14px; height:14px}
+  .contact-list{
+    font-size:12px; line-height:1.85; color:var(--ink-2);
+  }
+  .contact-list .ln{
+    display:flex; justify-content:space-between; gap:8px;
+    padding:3px 0; border-bottom:1px dashed rgba(154,15,27,.18);
+  }
+  .contact-list .ln:last-of-type{border-bottom:none}
+  .contact-list .k{color:var(--ink-3); font-weight:500}
+  .contact-list .v{color:var(--ink); font-weight:600; font-variant-numeric:tabular-nums}
+  .contact-list .v.email{font-weight:500; font-size:11.5px}
+  .contact-addr{
+    margin-top:12px; padding-top:12px;
+    border-top:1px solid rgba(154,15,27,.18);
+    font-size:11.5px; color:var(--ink-3); line-height:1.7;
+  }
+  .contact-copy{
+    margin-top:14px; font-size:10.5px;
+    color:var(--ink-4); letter-spacing:0.06em;
+  }
+
+  /* (B) 중앙 — 공지사항 + FAQ */
+  .center-box{
+    background:#fff; border:1px solid var(--line);
+    margin-bottom:18px;
+  }
+  .center-head{
+    padding:14px 20px;
+    border-bottom:1px solid var(--line);
+    display:flex; justify-content:space-between; align-items:baseline;
+    gap:14px;
+  }
+  .center-head .t{
+    display:flex; align-items:center; gap:8px;
+    font-size:15px; font-weight:700; color:var(--ink);
+    letter-spacing:-0.014em;
+  }
+  .center-head .t svg{width:15px; height:15px; color:var(--crimson)}
+  .center-head .more{
+    font-size:12px; color:var(--ink-3);
+    display:inline-flex; align-items:center; gap:4px;
+    transition:color .15s;
+  }
+  .center-head .more:hover{color:var(--crimson)}
+  .center-list li{border-bottom:1px solid var(--line)}
+  .center-list li:last-child{border-bottom:none}
+  .center-list a{
+    display:flex; justify-content:space-between; align-items:baseline;
+    gap:14px; padding:11px 20px;
+    transition:background .15s;
+  }
+  .center-list a:hover{background:var(--bg-2)}
+  .center-list .tag{
+    flex-shrink:0; padding:2px 7px;
+    font-size:10.5px; font-weight:600;
+    background:var(--bg-3); color:var(--ink-2);
+    letter-spacing:-0.005em;
+  }
+  .center-list .tag.is-imp{background:var(--ink); color:#fff}
+  .center-list .tt{
+    flex:1; font-size:13px; color:var(--ink-2);
+    overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+  }
+  .center-list a:hover .tt{color:var(--ink)}
+  .center-list .d{
+    font-size:11.5px; color:var(--ink-3);
+    font-variant-numeric:tabular-nums; flex-shrink:0;
+  }
+
+  /* ── (C) 우측 — 관련 기관 배너 ─────────────── */
+  .banner{
+    display:block; background:#fff;
+    border:1px solid var(--line);
+    padding:18px 18px 16px;
+    margin-bottom:8px;
+    transition:all .2s;
+    position:relative;
+  }
+  .banner::before{
+    content:''; position:absolute;
+    left:0; top:0; bottom:0; width:0;
+    background:var(--ink);
+    transition:width .2s;
+  }
+  .banner:hover{background:var(--bg-2)}
+  .banner:hover::before{width:3px}
+  .banner.is-key::before{width:3px; background:var(--crimson)}
+  .banner.is-parent::before{width:3px; background:var(--crimson)}
+  .banner-name{
+    font-size:13px; font-weight:700; color:var(--ink);
+    letter-spacing:-0.014em; line-height:1.3;
+    margin-bottom:3px;
+    display:flex; align-items:center; gap:6px;
+  }
+  .banner-name .b-fav{
+    width:14px; height:14px;
+    flex-shrink:0;
+  }
+  .banner-sub{
+    font-size:10.5px; color:var(--ink-3);
+    letter-spacing:-0.005em; margin-bottom:8px;
+  }
+  .banner-domain{
+    font-size:10.5px; color:var(--ink-4);
+    letter-spacing:0.02em;
+    font-variant-numeric:tabular-nums;
+    padding-top:8px; border-top:1px solid var(--line);
+  }
+  .banner:hover .banner-domain{color:var(--ink-2)}
+
+  /* ── 3. 학점은행제 [준비중] 안내 섹션 ─────── */
+  .credit{
+    padding:80px 32px;
+    background:var(--bg-2);
+    border-top:1px solid var(--line);
+  }
+  .credit-in{
+    max-width:var(--max); margin:0 auto;
+  }
+  /* 학점은행제 헤드 영역 — COMING SOON 표시 + 인트로 */
+  .credit-head{
+    display:grid; grid-template-columns:1.05fr .95fr;
+    gap:50px; align-items:center;
+    margin-bottom:64px;
+  }
+  .credit-stamp{
+    background:#fff; border:1px solid var(--line);
+    padding:48px 44px 40px;
+    position:relative;
+  }
+  .credit-stamp .stamp-status{
+    display:inline-block;
+    font-size:10.5px; letter-spacing:0.18em; font-weight:700;
+    color:var(--crimson);
+    padding:5px 10px;
+    border:1px solid var(--crimson);
+    margin-bottom:36px;
+  }
+  .credit-stamp .stamp-big{
+    font-family:'Noto Serif KR', serif;
+    font-size:clamp(96px, 11vw, 144px);
+    font-weight:300; color:var(--ink);
+    line-height:.9; letter-spacing:-0.04em;
+    margin-bottom:6px;
+    font-variant-numeric:tabular-nums;
+  }
+  .credit-stamp .stamp-big-unit{
+    display:block;
+    font-size:13px; color:var(--ink-3);
+    letter-spacing:0.14em; font-weight:600;
+    text-transform:uppercase; margin-bottom:28px;
+  }
+  .credit-stamp .stamp-desc{
+    font-size:13.5px; line-height:1.75; color:var(--ink-2);
+    padding-top:24px; border-top:1px solid var(--line);
+  }
+  .credit-stamp .stamp-desc strong{color:var(--ink); font-weight:700}
+
+  .credit-text .label{
+    font-size:11px; letter-spacing:0.22em; color:var(--crimson);
+    font-weight:700; margin-bottom:14px;
+    display:inline-flex; align-items:center; gap:12px;
+  }
+  .credit-text .label::before{content:''; width:18px; height:1px; background:var(--crimson)}
+  .credit-text h2{
+    font-family:'Noto Serif KR', serif;
+    font-size:clamp(24px, 2.6vw, 32px);
+    font-weight:600; letter-spacing:-0.022em;
+    line-height:1.3; margin-bottom:18px;
+  }
+  .credit-text p{
+    font-size:14.5px; line-height:1.8; color:var(--ink-2);
+    margin-bottom:16px;
+  }
+  .credit-text p:last-of-type{margin-bottom:0}
+  .credit-status{
+    margin-top:22px; padding:18px 20px;
+    background:#fff; border-left:3px solid var(--crimson);
+    border-top:1px solid var(--line);
+    border-right:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+  }
+  .credit-status .s-label{
+    font-size:11px; font-weight:700; color:var(--crimson);
+    letter-spacing:0.14em; margin-bottom:6px;
+  }
+  .credit-status .s-text{
+    font-size:13px; line-height:1.7; color:var(--ink-2);
+  }
+  .credit-status .s-text strong{color:var(--ink); font-weight:700}
+
+  /* 학점은행제 서브 섹션 (소개·절차·학위 등) */
+  .credit-sub{
+    background:#fff; border:1px solid var(--line);
+    padding:48px 44px;
+    margin-bottom:24px;
+  }
+  .credit-sub-head{
+    display:flex; align-items:baseline; gap:14px;
+    padding-bottom:18px; border-bottom:1px solid var(--ink);
+    margin-bottom:28px;
+  }
+  .credit-sub-head .n{
+    font-family:'Noto Serif KR', serif;
+    font-size:30px; font-weight:600; color:var(--crimson);
+    letter-spacing:-0.02em; line-height:1;
+    font-variant-numeric:tabular-nums;
+  }
+  .credit-sub-head h3{
+    font-size:22px; font-weight:700; letter-spacing:-0.02em;
+    line-height:1.3;
+  }
+  .credit-sub-head .anchor{
+    font-size:11px; color:var(--ink-4); font-weight:500;
+    letter-spacing:0.14em; margin-left:auto;
+    text-transform:uppercase;
+  }
+  .credit-sub-body{font-size:14px; line-height:1.8; color:var(--ink-2)}
+  .credit-sub-body p{margin-bottom:14px}
+  .credit-sub-body p:last-child{margin-bottom:0}
+  .credit-sub-body strong{font-weight:700; color:var(--ink)}
+
+  /* 학점 인정 절차 6단계 — 가로 플로우 */
+  .process{
+    display:grid; grid-template-columns:repeat(6, 1fr);
+    gap:8px;
+    margin-top:8px;
+  }
+  .p-step{
+    padding:22px 16px 20px;
+    background:var(--bg-2);
+    position:relative;
+    text-align:left;
+    border-top:3px solid var(--ink-4);
+    transition:border-color .2s, background .2s;
+  }
+  .p-step.is-key{
+    background:var(--crimson-tint);
+    border-top-color:var(--crimson);
+  }
+  .p-step::after{
+    content:''; position:absolute;
+    right:-10px; top:50%; transform:translateY(-50%);
+    width:0; height:0;
+    border-left:8px solid var(--line);
+    border-top:6px solid transparent;
+    border-bottom:6px solid transparent;
+    z-index:2;
+  }
+  .p-step:last-child::after{display:none}
+  .p-step .p-num{
+    font-family:'Noto Serif KR', serif;
+    font-size:11px; letter-spacing:0.18em; font-weight:700;
+    color:var(--ink-3); margin-bottom:8px;
+  }
+  .p-step.is-key .p-num{color:var(--crimson)}
+  .p-step h4{
+    font-size:14px; font-weight:700; letter-spacing:-0.014em;
+    margin-bottom:6px; line-height:1.35;
+  }
+  .p-step p{
+    font-size:11.5px; line-height:1.55; color:var(--ink-3);
+    margin:0;
+  }
+
+  /* 학위 취득 과정 — 140학점 구성 */
+  .degree-wrap{
+    display:grid; grid-template-columns:auto 1fr;
+    gap:36px; align-items:center;
+  }
+  .degree-figure{
+    width:240px; flex-shrink:0;
+    text-align:center;
+  }
+  .degree-circle{
+    position:relative;
+    width:200px; height:200px; margin:0 auto;
+  }
+  .degree-circle svg{
+    width:100%; height:100%;
+    transform:rotate(-90deg);
+  }
+  .degree-circle .center{
+    position:absolute; inset:0;
+    display:flex; flex-direction:column;
+    align-items:center; justify-content:center;
+    text-align:center;
+  }
+  .degree-circle .center .total{
+    font-family:'Noto Serif KR', serif;
+    font-size:52px; font-weight:700; color:var(--ink);
+    line-height:1; letter-spacing:-0.03em;
+  }
+  .degree-circle .center .total-l{
+    font-size:11px; color:var(--ink-3); margin-top:4px;
+    letter-spacing:0.14em; font-weight:600;
+  }
+  .degree-cap{
+    font-size:12.5px; color:var(--ink-3); margin-top:16px;
+    line-height:1.6;
+  }
+  .degree-cap strong{color:var(--ink); font-weight:700}
+
+  .degree-list li{
+    display:grid; grid-template-columns:14px 90px 60px 1fr;
+    gap:14px; align-items:baseline;
+    padding:12px 0;
+    border-bottom:1px solid var(--line);
+    font-size:13px;
+  }
+  .degree-list li:last-child{border-bottom:none}
+  .degree-list .swatch{
+    width:14px; height:14px;
+    align-self:center;
+  }
+  .degree-list .swatch.is-major{background:var(--crimson)}
+  .degree-list .swatch.is-minor{background:#7C0B14}
+  .degree-list .swatch.is-elective{background:var(--ink)}
+  .degree-list .swatch.is-general{background:var(--ink-4)}
+  .degree-list .swatch.is-thesis{background:var(--bg-3); border:1px solid var(--line)}
+  .degree-list .k{font-weight:700; color:var(--ink)}
+  .degree-list .v{
+    color:var(--crimson); font-weight:700;
+    font-variant-numeric:tabular-nums;
+  }
+  .degree-list .v.is-general-c{color:var(--ink-2)}
+  .degree-list .d{color:var(--ink-3); line-height:1.5}
+
+  /* 학습설계 + 수강방법 + 학위수여 + 주의사항 — 세로 정보 */
+  .info-cols{
+    display:grid; grid-template-columns:1fr 1fr;
+    gap:32px;
+  }
+  .info-block h4{
+    font-size:15px; font-weight:700; letter-spacing:-0.014em;
+    color:var(--ink); margin-bottom:14px;
+    padding-bottom:10px; border-bottom:1px solid var(--line);
+    display:flex; align-items:center; gap:8px;
+  }
+  .info-block h4 .b-num{
+    font-family:'Noto Serif KR', serif;
+    font-size:11px; font-weight:600; color:var(--crimson);
+    letter-spacing:0.14em;
+    background:var(--crimson-tint); padding:3px 7px;
+  }
+  .info-block ul li{
+    padding:8px 0 8px 18px;
+    font-size:13px; line-height:1.65;
+    color:var(--ink-2); position:relative;
+  }
+  .info-block ul li::before{
+    content:''; position:absolute; left:0; top:16px;
+    width:10px; height:1px; background:var(--crimson);
+  }
+  .info-block ul li strong{color:var(--ink); font-weight:700}
+  .info-block.is-warn{background:var(--crimson-tint); padding:24px 26px}
+  .info-block.is-warn h4{
+    color:var(--crimson); border-color:rgba(154,15,27,.25);
+  }
+  .info-block.is-warn ul li{color:var(--ink-2)}
+  .info-block.is-warn ul li::before{background:var(--crimson-d)}
+
+  /* 학점은행제 FAQ */
+  .credit-faq dl{
+    border-top:1px solid var(--ink);
+  }
+  .credit-faq dt{
+    padding:16px 0 14px 28px;
+    font-size:14px; font-weight:700; color:var(--ink);
+    position:relative; letter-spacing:-0.012em;
+    border-bottom:1px solid var(--line);
+    cursor:pointer;
+    display:flex; justify-content:space-between; align-items:flex-start;
+    gap:14px;
+  }
+  .credit-faq dt::before{
+    content:'Q'; position:absolute;
+    left:0; top:16px;
+    font-family:'Noto Serif KR', serif;
+    color:var(--crimson); font-weight:700;
+    font-size:16px;
+  }
+  .credit-faq dt .arr{
+    font-size:12px; color:var(--ink-3); font-weight:500;
+    transition:transform .2s;
+  }
+  .credit-faq dt.is-open .arr{transform:rotate(45deg)}
+  .credit-faq dd{
+    padding:16px 28px 22px 28px;
+    font-size:13px; line-height:1.75; color:var(--ink-2);
+    border-bottom:1px solid var(--line);
+    background:var(--bg-2);
+    position:relative;
+    display:none;
+  }
+  .credit-faq dd::before{
+    content:'A'; position:absolute;
+    left:0; top:16px;
+    font-family:'Noto Serif KR', serif;
+    color:var(--ink-3); font-weight:700;
+    font-size:16px;
+  }
+  .credit-faq dd.is-open{display:block}
+  .credit-faq dd strong{font-weight:700; color:var(--ink)}
+
+  /* ── 6. 법학 전문 자료실 ─────────────────────── */
+  .resources{
+    padding:70px 32px;
+    background:#fff;
+    border-top:1px solid var(--line);
+  }
+  .resources-in{max-width:var(--max); margin:0 auto}
+  .res-grid{
+    display:grid; grid-template-columns:repeat(5, 1fr);
+    gap:0; border-left:1px solid var(--line);
+    margin-top:24px;
+  }
+  .res-card{
+    padding:28px 24px 26px;
+    border-right:1px solid var(--line);
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+    display:flex; flex-direction:column; gap:6px;
+    transition:background .15s;
+    position:relative;
+  }
+  .res-card::before{
+    content:''; position:absolute;
+    left:0; top:0; bottom:0; width:0;
+    background:var(--crimson);
+    transition:width .2s;
+  }
+  .res-card:hover{background:var(--bg-2)}
+  .res-card:hover::before{width:3px}
+  .res-card .res-num{
+    font-family:'Noto Serif KR', serif;
+    font-size:13px; font-weight:500; color:var(--ink-3);
+    letter-spacing:0.12em; margin-bottom:18px;
+    font-variant-numeric:tabular-nums;
+  }
+  .res-card .res-name{
+    font-size:14.5px; font-weight:700; color:var(--ink);
+    letter-spacing:-0.014em; line-height:1.35;
+    margin-bottom:4px;
+  }
+  .res-card .res-en{
+    font-size:11px; color:var(--ink-3);
+    letter-spacing:0.04em;
+    font-variant-numeric:tabular-nums;
+  }
+  .res-card .res-desc{
+    font-size:12px; color:var(--ink-3); line-height:1.6;
+    margin-top:14px; padding-top:14px;
+    border-top:1px solid var(--line);
+  }
+  .res-card .res-go{
+    margin-top:14px;
+    font-size:11.5px; font-weight:600; color:var(--ink-3);
+    letter-spacing:0.04em;
+    display:inline-flex; align-items:center; gap:6px;
+    transition:gap .15s, color .15s;
+  }
+  .res-card:hover .res-go{color:var(--crimson); gap:10px}
+
+  /* 푸터 운영주관/후원 */
+  .foot-org{
+    max-width:var(--max); margin:0 auto;
+    padding:14px 32px;
+    border-top:1px solid var(--line);
+    display:flex; gap:28px; align-items:center;
+    font-size:12px; color:var(--ink-3);
+    flex-wrap:wrap;
+  }
+  .foot-org .org-tag{
+    display:inline-flex; align-items:center; gap:10px;
+  }
+  .foot-org .org-tag .lbl{
+    font-size:10px; font-weight:700; letter-spacing:0.16em;
+    color:var(--ink-3);
+    padding-right:10px; border-right:1px solid var(--line);
+  }
+  .foot-org .org-tag .lbl.is-sub{color:var(--ink-3)}
+  .foot-org .org-tag .nm{
+    font-weight:500; color:var(--ink-2);
+    font-size:12.5px; letter-spacing:-0.005em;
+  }
+
+
+  /* ── 4. 교육과정 (비학위 / 민간자격 / 전문가) ── */
+  section.tracks{
+    padding:80px 32px;
+    border-top:1px solid var(--line);
+  }
+  .tracks-in{max-width:var(--max); margin:0 auto}
+  .sec-head{
+    display:flex; justify-content:space-between; align-items:flex-end;
+    margin-bottom:32px; gap:24px; flex-wrap:wrap;
+  }
+  .sec-label{
+    font-size:11px; font-weight:700; color:var(--crimson);
+    letter-spacing:0.22em; margin-bottom:12px;
+    display:inline-flex; align-items:center; gap:12px;
+  }
+  .sec-label::before{content:''; width:18px; height:1px; background:var(--crimson)}
+  .sec-title{
+    font-size:clamp(22px, 2.4vw, 30px);
+    font-weight:700; letter-spacing:-0.022em; line-height:1.3;
+  }
+  .sec-head .sub{
+    font-size:13px; color:var(--ink-3);
+    max-width:400px; line-height:1.7;
+  }
+
+  .track-tabs{
+    display:flex; gap:0;
+    border-bottom:1px solid var(--ink);
+    margin-bottom:0;
+  }
+  .track-tab{
+    padding:13px 22px 13px 0;
+    margin-right:22px;
+    font-size:13.5px; font-weight:600; color:var(--ink-3);
+    letter-spacing:-0.012em;
+    border-bottom:2px solid transparent;
+    margin-bottom:-1px;
+    cursor:pointer; transition:color .15s, border-color .15s;
+    display:inline-flex; align-items:center; gap:6px;
+  }
+  .track-tab:hover{color:var(--ink)}
+  .track-tab.is-active{color:var(--ink); border-bottom-color:var(--crimson)}
+  .track-tab .ct{
+    font-size:10.5px; color:var(--ink-4);
+    font-variant-numeric:tabular-nums; font-weight:500;
+  }
+
+  .course-list{
+    display:grid; grid-template-columns:repeat(4, 1fr);
+    gap:0; border-left:1px solid var(--line);
+  }
+  .course{
+    border-right:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+    background:#fff;
+    display:flex; flex-direction:column;
+    transition:background .2s;
+  }
+  .course:hover{background:var(--bg-2)}
+  .course-thumb{
+    aspect-ratio: 16 / 10;
+    background:var(--ink); color:#fff;
+    position:relative; overflow:hidden;
+    padding:18px 20px;
+    display:flex; flex-direction:column; justify-content:space-between;
+  }
+  /* 카테고리별 컬러 면 */
+  .course[data-color="ink"]      .course-thumb{background:#1A1A1A; color:#fff}
+  .course[data-color="crimson"]  .course-thumb{background:var(--crimson); color:#fff}
+  .course[data-color="warm"]     .course-thumb{background:#2A1E18; color:#fff}
+  .course[data-color="cool"]     .course-thumb{background:#161A20; color:#fff}
+  .course[data-color="brown"]    .course-thumb{background:#241612; color:#fff}
+  .course[data-color="cream"]    .course-thumb{background:var(--bg-3); color:var(--ink)}
+
+  .course-thumb .t-meta{
+    display:flex; justify-content:space-between; align-items:baseline;
+    font-size:10.5px; letter-spacing:0.14em; font-weight:600;
+    opacity:.78; text-transform:uppercase;
+  }
+  .course-thumb .t-meta .t-year{
+    font-variant-numeric:tabular-nums; letter-spacing:0.08em;
+  }
+  /* 코드 끝 3자리 — Penguin Classics 표지 스타일 */
+  .course-thumb .t-num{
+    font-family:'Noto Serif KR', serif;
+    font-size:clamp(40px, 4.2vw, 56px);
+    font-weight:300; line-height:.9;
+    letter-spacing:-0.02em;
+    align-self:flex-end;
+    font-variant-numeric:tabular-nums;
+    opacity:.96;
+  }
+  /* 하단 좌측 가는 가로선 — 시각 디테일 */
+  .course-thumb::after{
+    content:''; position:absolute;
+    left:20px; bottom:18px; width:36px; height:1px;
+    background:currentColor; opacity:.5;
+  }
+  .course-body{padding:14px 18px 16px}
+  .course-pcode{
+    font-size:10.5px; color:var(--ink-3); font-weight:500;
+    margin-bottom:5px; font-variant-numeric:tabular-nums;
+  }
+  .course-title{
+    font-size:13.5px; font-weight:600; line-height:1.45;
+    letter-spacing:-0.012em; margin-bottom:10px;
+    display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical;
+    overflow:hidden; min-height:2.6em;
+  }
+  .course-meta{
+    display:flex; gap:10px; font-size:11px; color:var(--ink-3);
+    font-variant-numeric:tabular-nums;
+  }
+  .course-meta span{display:inline-flex; align-items:center; gap:4px}
+  .course-meta svg{width:11px; height:11px}
+  .course.is-hidden{display:none}
+
+  /* ── 5. 운영규정 + 학습비 (간략) ──────────── */
+  .rules{padding:80px 32px; background:var(--bg-2); border-top:1px solid var(--line)}
+  .rules-in{max-width:var(--max); margin:0 auto}
+  .rules-grid{
+    display:grid; grid-template-columns:1fr 1fr;
+    gap:32px; margin-top:32px;
+  }
+  .rules-card{
+    background:#fff; border:1px solid var(--line);
+  }
+  .rules-card-h{
+    padding:16px 22px; border-bottom:1px solid var(--line);
+    background:var(--ink); color:#fff;
+    display:flex; align-items:center; gap:10px;
+    font-size:14px; font-weight:700; letter-spacing:-0.012em;
+  }
+  .rules-card-h .n{
+    font-family:'Noto Serif KR', serif;
+    font-size:18px; font-weight:600; color:#fff;
+  }
+  .rules-card-h .basis{
+    margin-left:auto; font-size:10.5px; font-weight:500;
+    background:rgba(255,255,255,.14); padding:3px 8px;
+    letter-spacing:0.04em; color:#fff;
+  }
+  .rules-table .r{
+    display:grid; grid-template-columns:120px 1fr;
+    border-bottom:1px solid var(--line);
+  }
+  .rules-table .r:last-child{border-bottom:none}
+  .rules-table .k{
+    padding:14px 20px; background:var(--bg-2);
+    font-size:12.5px; font-weight:700; color:var(--ink);
+    border-right:1px solid var(--line);
+  }
+  .rules-table .v{
+    padding:14px 20px; font-size:12.5px; color:var(--ink-2);
+    line-height:1.7;
+  }
+  .rules-table .v strong{color:var(--ink); font-weight:600}
+
+  /* ── 푸터 (단순) ────────────────────────────── */
+  footer{
+    background:#fff;
+    border-top:3px solid var(--crimson);
+    padding:0;
+  }
+  .foot-top{
+    background:var(--bg-2);
+    border-bottom:1px solid var(--line);
+  }
+  .foot-top-in{
+    max-width:var(--max); margin:0 auto;
+    padding:14px 32px;
+    display:flex; gap:24px; align-items:center;
+    font-size:13px;
+  }
+  .foot-top-in a{
+    color:var(--ink-2); font-weight:500;
+    transition:color .15s;
+  }
+  .foot-top-in a:hover{color:var(--crimson)}
+  .foot-top-in a.is-primary{color:var(--crimson); font-weight:700}
+  .foot-sep{color:var(--ink-4)}
+
+  .foot-mid{
+    max-width:var(--max); margin:0 auto;
+    padding:30px 32px;
+    display:flex; justify-content:space-between; align-items:center;
+    gap:24px; flex-wrap:wrap;
+  }
+  .foot-info{
+    font-size:12px; color:var(--ink-3); line-height:1.85;
+  }
+  .foot-info strong{color:var(--ink-2); font-weight:600}
+  .foot-emblem{
+    display:flex; align-items:center; gap:14px;
+  }
+  .foot-logo{
+    height:38px; width:auto;
+    display:block;
+  }
+  .foot-emblem-sub{
+    padding-left:14px; border-left:1px solid var(--line);
+    display:flex; flex-direction:column; line-height:1.2;
+  }
+  .foot-emblem-sub .ko{
+    font-family:'Noto Serif KR', serif;
+    font-size:14px; font-weight:600; color:var(--ink);
+    letter-spacing:-0.018em;
+  }
+  .foot-emblem-sub .en{
+    font-size:9px; color:var(--ink-3);
+    letter-spacing:0.1em; margin-top:3px;
+    text-transform:uppercase;
+  }
+  .foot-copy{
+    text-align:center;
+    padding:14px 32px;
+    border-top:1px solid var(--line);
+    font-size:11px; color:var(--ink-4);
+    background:var(--bg-2);
+  }
+
+  /* ── 반응형 ──────────────────────────────────── */
+  @media (max-width:1280px){
+    .quick-fix{display:none}
+  }
+  @media (max-width:1024px){
+    .topbar-in{padding:0 18px}
+    .head{padding:18px}
+    .brand-tag{display:none}
+    .menubar-in{height:auto; flex-wrap:wrap}
+    .main-nav{flex-wrap:wrap; width:100%; overflow-x:auto}
+    .main-nav > li > a{padding:0 14px; font-size:13.5px; height:48px}
+    .grid-toggle{width:48px; height:48px}
+    .megamenu-in{grid-template-columns:repeat(3, 1fr)}
+    .slider{height:280px}
+    .slider-arrow{display:none}
+    .col3-in{
+      grid-template-columns:1fr;
+      gap:18px;
+    }
+    .credit-in{grid-template-columns:1fr; gap:32px}
+    .credit-head{grid-template-columns:1fr; gap:32px; margin-bottom:48px}
+    .credit-sub{padding:36px 28px}
+    .process{grid-template-columns:repeat(3, 1fr); gap:24px 8px}
+    .p-step:nth-child(3n)::after{display:none}
+    .degree-wrap{grid-template-columns:1fr; gap:32px}
+    .degree-figure{width:auto; margin:0 auto}
+    .info-cols{grid-template-columns:1fr; gap:24px}
+    .res-grid{grid-template-columns:repeat(3, 1fr)}
+    .course-list{grid-template-columns:repeat(2, 1fr)}
+    .rules-grid{grid-template-columns:1fr}
+  }
+  @media (max-width:680px){
+    .topbar-r a.hide-sm{display:none}
+    .head{flex-wrap:wrap; gap:10px; padding:14px 18px}
+    .head-right{display:none}
+    .brand-logo{height:34px}
+    .brand-divider{height:26px; margin:0 2px}
+    .brand-sub-ko{font-size:15px}
+    .brand-sub-en{font-size:8.5px}
+
+    .main-nav > li > a{padding:0 12px; font-size:13px}
+    .main-nav > li.is-home > a{padding:0 14px}
+    .megamenu-in{grid-template-columns:repeat(2, 1fr); padding:20px; gap:18px}
+    .mm-col h4{font-size:12.5px}
+    .mm-col ul li a{font-size:11.5px}
+
+    .slider{height:220px}
+    .slide-tag{font-size:10.5px; margin-bottom:10px}
+    .slide-sub{font-size:12.5px}
+
+    .main-3col{padding:30px 18px 50px}
+    .credit{padding:60px 18px}
+    .credit-head{margin-bottom:36px}
+    .credit-stamp{padding:32px 26px 28px}
+    .credit-stamp .stamp-big{font-size:84px}
+    .credit-stamp .stamp-status{margin-bottom:24px}
+    .credit-sub{padding:28px 22px}
+    .credit-sub-head h3{font-size:18px}
+    .credit-sub-head .n{font-size:24px}
+    .process{grid-template-columns:1fr 1fr; gap:14px 8px}
+    .p-step{padding:16px 12px}
+    .p-step:nth-child(3n)::after{display:block}
+    .p-step:nth-child(2n)::after{display:none}
+    .degree-circle{width:160px; height:160px}
+    .degree-circle .center .total{font-size:42px}
+    .degree-list li{grid-template-columns:14px 70px 50px 1fr; font-size:12px}
+    .res-grid{grid-template-columns:1fr 1fr}
+    .res-card{padding:18px 16px}
+    section.tracks{padding:60px 18px}
+    .track-tabs{overflow-x:auto; white-space:nowrap; flex-wrap:nowrap; -webkit-overflow-scrolling:touch}
+    .track-tab{flex-shrink:0; padding-right:18px; margin-right:18px}
+    .course-list{grid-template-columns:1fr 1fr}
+    .course-thumb .han{font-size:38px}
+    .course-title{font-size:12.5px}
+    .rules{padding:60px 18px}
+
+    .foot-top-in{padding:12px 18px; flex-wrap:wrap; gap:8px}
+    .foot-mid{padding:24px 18px; flex-direction:column; align-items:flex-start}
+  }
+</style>
+</head>
+<body>
+
+<!-- ── 상위 탭 바: 자매 사이트 ─────────────────── -->
+<div class="topbar" role="navigation" aria-label="자매 사이트">
+  <div class="topbar-in">
+    <div class="sites">
+      <a href="https://klai.or.kr">한국법학진흥원</a>
+      <a href="https://klai.or.kr">본원</a>
+      <a href="https://klaiedu.com" class="is-here">연수원</a>
+      <a href="https://klai.or.kr/ready.html">법학연구소</a>
+    </div>
+    <div class="topbar-r">
+      <a href="#">English</a>
+      <a href="#" class="hide-sm">사이트맵</a>
+    </div>
+  </div>
+</div>
+
+<!-- ── 메인 헤더 (본원 워드마크 + 연수원 부제) ─── -->
+<header>
+  <div class="head">
+    <a href="https://klai.or.kr" class="brand-link" aria-label="한국법학진흥원">
+      <img src="assets/klai_logo.svg" alt="한국법학진흥원 Korea Law Academy Institute" class="brand-logo">
+    </a>
+    <span class="brand-divider" aria-hidden="true"></span>
+    <div class="brand-sub">
+      <span class="brand-sub-ko">연수원</span>
+      <span class="brand-sub-en">Institute of Continuing Education</span>
+    </div>
+    <span class="brand-tag">(<strong>평생학습시설</strong> 인가 준비)</span>
+    <div class="head-right">
+      <a href="#" class="head-link">로그인</a>
+      <a href="#" class="head-link">회원가입</a>
+      <div class="head-search">
+        <input type="text" placeholder="과정 검색" aria-label="과정 검색">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="7" cy="7" r="5"/><path d="M11 11l3 3"/></svg>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ── 와인색 메인 메뉴 + 메가메뉴 ─────────────── -->
+<div class="menubar">
+  <div class="menubar-in">
+    <button class="grid-toggle" id="gridToggle" aria-label="전체 메뉴 펼치기">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <rect x="3" y="3" width="5" height="5"/><rect x="10" y="3" width="5" height="5"/><rect x="17" y="3" width="5" height="5"/>
+        <rect x="3" y="10" width="5" height="5"/><rect x="10" y="10" width="5" height="5"/><rect x="17" y="10" width="5" height="5"/>
+        <rect x="3" y="17" width="5" height="5"/><rect x="10" y="17" width="5" height="5"/><rect x="17" y="17" width="5" height="5"/>
+      </svg>
+    </button>
+    <ul class="main-nav" role="menubar">
+      <li class="is-home"><a href="#">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8l6-6 6 6"/><path d="M3 7v7h10V7"/></svg>
+        Home
+      </a></li>
+      <li><a href="#about">연수원소개</a></li>
+      <li><a href="#credit">학점은행제<span class="pin">준비중</span></a></li>
+      <li><a href="#non-degree">비학위과정</a></li>
+      <li><a href="#certs">민간자격</a></li>
+      <li><a href="#expert">전문가과정</a></li>
+      <li><a href="#info">정보광장</a></li>
+      <li><a href="#notice">공지사항</a></li>
+    </ul>
+  </div>
+  <!-- 메가 메뉴 (그리드 토글로 펼침) -->
+  <div class="megamenu" id="megamenu">
+    <div class="megamenu-in">
+      <div class="mm-col">
+        <h4>연수원소개</h4>
+        <ul>
+          <li><a href="#about">원장 인사말</a></li>
+          <li><a href="#about">설립 목적</a></li>
+          <li><a href="#about">연혁</a></li>
+          <li><a href="#about">조직도</a></li>
+          <li><a href="#about">시설 안내</a></li>
+          <li><a href="#about">오시는 길</a></li>
+          <li><a href="#rules">운영규정</a></li>
+          <li><a href="#about">입학 안내</a></li>
+        </ul>
+      </div>
+      <div class="mm-col">
+        <h4>학점은행제 <span class="pin">준비중</span></h4>
+        <ul>
+          <li><a href="#credit-intro">학점은행제 소개</a></li>
+          <li><a href="#credit-process">학점 인정 절차</a></li>
+          <li><a href="#credit-degree">학위 취득 과정</a></li>
+          <li><a href="#credit-design">학습 설계</a></li>
+          <li><a href="#credit-method">수강 방법</a></li>
+          <li><a href="#credit-award">학위 수여</a></li>
+          <li><a href="#credit-notes">주의사항</a></li>
+        </ul>
+      </div>
+      <div class="mm-col">
+        <h4>비학위과정</h4>
+        <ul>
+          <li><a href="#non-degree">법학개론</a></li>
+          <li><a href="#non-degree">헌법 연습</a></li>
+          <li><a href="#non-degree">민법 연습</a></li>
+          <li><a href="#non-degree">형법 연습</a></li>
+          <li><a href="#non-degree">행정법 기초</a></li>
+          <li><a href="#non-degree">청년변호사 시리즈</a></li>
+          <li><a href="#non-degree">계절학기</a></li>
+          <li><a href="#non-degree">신규 개설 과정</a></li>
+        </ul>
+      </div>
+      <div class="mm-col">
+        <h4>민간자격</h4>
+        <ul>
+          <li><a href="#certs">법령정보분석사</a></li>
+          <li><a href="#certs">개인회생·파산 상담사</a></li>
+          <li><a href="#certs">ADR 조정사</a></li>
+          <li><a href="#certs">컴플라이언스 매니저</a></li>
+          <li><a href="#certs">등기·등록 실무자</a></li>
+          <li><a href="#certs">송무 보조원</a></li>
+          <li><a href="#certs">자격 등록 안내</a></li>
+        </ul>
+      </div>
+      <div class="mm-col">
+        <h4>전문가과정</h4>
+        <ul>
+          <li><a href="#expert">변호사 실무 과정</a></li>
+          <li><a href="#expert">기업법무 과정</a></li>
+          <li><a href="#expert">국제중재 과정</a></li>
+          <li><a href="#expert">리걸테크 · AI 법</a></li>
+          <li><a href="#expert">최고위 과정</a></li>
+          <li><a href="#expert">수강 후기</a></li>
+        </ul>
+      </div>
+      <div class="mm-col">
+        <h4>정보광장</h4>
+        <ul>
+          <li><a href="#info">입학상담</a></li>
+          <li><a href="#info">자료실</a></li>
+          <li><a href="#info">학습비 안내</a></li>
+          <li><a href="#info">환불 안내</a></li>
+          <li><a href="#info">자주 묻는 질문</a></li>
+          <li><a href="#info">단체 수강 문의</a></li>
+        </ul>
+      </div>
+      <div class="mm-col">
+        <h4>공지사항</h4>
+        <ul>
+          <li><a href="#notice">공지사항</a></li>
+          <li><a href="#notice">언론 보도</a></li>
+          <li><a href="#notice">평생학습시설 인가 소식</a></li>
+          <li><a href="#notice">강사 위촉 소식</a></li>
+          <li><a href="#notice">행사 안내</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── 우측 떠있는 Quick Menu ────────────────── -->
+<aside class="quick-fix" aria-label="빠른 메뉴">
+  <div class="qf-title">QUICK MENU</div>
+  <a href="#non-degree">
+    <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2" y="2" width="10" height="10"/><path d="M2 5h10M5 2v10"/></svg>
+    일반 교양과정
+  </a>
+  <a href="#expert">
+    <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M7 2l1.5 3 3.5.5-2.5 2.5.5 3.5-3-1.5-3 1.5.5-3.5L2 5.5l3.5-.5z"/></svg>
+    전문가 과정
+  </a>
+  <a href="#certs">
+    <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="7" cy="6" r="3.5"/><path d="M4.5 9L3 13l4-2 4 2-1.5-4"/></svg>
+    민간자격
+  </a>
+  <button class="qf-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">▲ TOP</button>
+</aside>
+
+<main>
+
+<!-- ╔══════════════════════════════════════════════
+     1. 슬라이더 (3장)
+     수정: .slide-1/2/3 의 카피와 배경
+     ══════════════════════════════════════════════ -->
+<section class="slider" aria-label="메인 슬라이더">
+  <div class="slides" id="slides">
+
+    <div class="slide slide-1">
+      <div class="slide-bg"></div>
+      <div class="slide-overlay"></div>
+      <div class="slide-in">
+        <div class="slide-tag">한국법학진흥원 부설 — 평생학습시설</div>
+        <h2>법학교육의 공백을<br>평생학습으로 메웁니다</h2>
+        <p class="slide-sub">현직 법조인과 법학전문대학원 교수진이 강의를 담당합니다. 학습 이수시간은 평생학습시설 인가 후 공적 인증 대상이 됩니다.</p>
+      </div>
+    </div>
+
+    <div class="slide slide-2">
+      <div class="slide-bg"></div>
+      <div class="slide-overlay"></div>
+      <div class="slide-in">
+        <div class="slide-tag">2026 신규 — 민간자격</div>
+        <h2>법령정보분석사<br>양성 과정</h2>
+        <p class="slide-sub">법령 · 판례 · 행정해석의 체계적 분석. 리걸테크 · 법학 연구 분야의 기반이 되는 전문 인력 양성.</p>
+      </div>
+    </div>
+
+    <div class="slide slide-3">
+      <div class="slide-bg"></div>
+      <div class="slide-overlay"></div>
+      <div class="slide-in">
+        <div class="slide-tag">공익 과정 — 무료</div>
+        <h2>청년변호사 시리즈<br>개업 1년차 실무</h2>
+        <p class="slide-sub">사건수임부터 보수산정까지, 학교가 가르치지 않는 실무. 본원의 공익 사업으로 운영됩니다.</p>
+      </div>
+    </div>
+
+  </div>
+  <button class="slider-arrow prev" id="prevSlide" aria-label="이전 슬라이드">
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M10 2L4 8l6 6"/></svg>
+  </button>
+  <button class="slider-arrow next" id="nextSlide" aria-label="다음 슬라이드">
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 2l6 6-6 6"/></svg>
+  </button>
+  <div class="slider-dots" id="sliderDots">
+    <button class="is-on" data-i="0" aria-label="슬라이드 1"></button>
+    <button data-i="1" aria-label="슬라이드 2"></button>
+    <button data-i="2" aria-label="슬라이드 3"></button>
+  </div>
+</section>
+
+<!-- ╔══════════════════════════════════════════════
+     2. 3-컬럼 메인 (로그인+상담 / 공지+FAQ / 배너)
+     ══════════════════════════════════════════════ -->
+<section class="main-3col">
+  <div class="col3-in">
+
+    <!-- (A) 좌측 ── 수강생 로그인 + 입학상담 -->
+    <aside aria-label="수강생 로그인 및 입학상담">
+
+      <div class="login-box">
+        <div class="login-head">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6V4a3 3 0 016 0v2"/><rect x="2" y="6" width="8" height="7"/></svg>
+          수강생 로그인
+        </div>
+        <div class="login-body">
+          <input type="text" placeholder="아이디 또는 이메일 주소">
+          <div class="login-row">
+            <input type="password" placeholder="비밀번호">
+            <button class="login-btn">
+              <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 6h7M6 3l3 3-3 3"/></svg>
+              로그인
+            </button>
+          </div>
+        </div>
+        <div class="login-foot">
+          <a href="#"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="4" r="2"/><path d="M2 10c0-2 2-3 4-3s4 1 4 3"/></svg> 회원가입</a>
+          <a href="#"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="5" cy="5" r="3"/><path d="M7 7l3 3"/></svg> 아이디/비밀번호 찾기</a>
+        </div>
+      </div>
+
+      <div class="contact-box">
+        <div class="contact-head">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6.5"/><path d="M8 4v4l3 2"/></svg>
+          입학상담 문의처
+        </div>
+        <div class="contact-list">
+          <div class="ln"><span class="k">대표전화</span><span class="v">02-XXXX-XXXX</span></div>
+          <div class="ln"><span class="k">비학위과정</span><span class="v">02-XXXX-XXXX</span></div>
+          <div class="ln"><span class="k">민간자격</span><span class="v">02-XXXX-XXXX</span></div>
+          <div class="ln"><span class="k">전문가과정</span><span class="v">02-XXXX-XXXX</span></div>
+          <div class="ln"><span class="k">FAX</span><span class="v">02-XXXX-XXXX</span></div>
+          <div class="ln"><span class="k">E-mail</span><span class="v email">edu@klai.or.kr</span></div>
+        </div>
+        <div class="contact-addr">
+          (03142) 서울 종로구 광화문 변호사회관 29호<br>
+          한국법학진흥원 부설 연수원<br>
+          ※ 평일 10:00–17:00 (12:00–13:00 점심)
+        </div>
+        <div class="contact-copy">COPYRIGHT © 2026 KLAI INSTITUTE</div>
+      </div>
+
+    </aside>
+
+    <!-- (B) 중앙 ── 공지사항 + 자주하는 질문 -->
+    <div>
+
+      <div class="center-box">
+        <div class="center-head">
+          <span class="t">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 4h12v8H2z"/><path d="M2 4l6 5 6-5"/></svg>
+            공지사항
+          </span>
+          <a href="#notice" class="more">더보기 ›</a>
+        </div>
+        <ul class="center-list">
+          <li><a href="#">
+            <span class="tag is-imp">공지</span>
+            <span class="tt">2026-1(여름) 7월 초 개강 학기 등록 안내</span>
+            <span class="d">2026.04.23</span>
+          </a></li>
+          <li><a href="#">
+            <span class="tag">학점은행제</span>
+            <span class="tt">[학점은행제] 2026-1(여름) 학점은행제 회의 결과 안내</span>
+            <span class="d">2026.04.03</span>
+          </a></li>
+          <li><a href="#">
+            <span class="tag">학점은행제</span>
+            <span class="tt">[학점은행제] [수학전공] 수료증 발급 대상자 접수 안내</span>
+            <span class="d">2026.03.25</span>
+          </a></li>
+          <li><a href="#">
+            <span class="tag">민간자격</span>
+            <span class="tt">2026-1(여름) 법령정보분석사 2급 자격 시험 안내</span>
+            <span class="d">2026.03.23</span>
+          </a></li>
+          <li><a href="#">
+            <span class="tag">일반교양</span>
+            <span class="tt">2026학년도 2학기 평생교육과정 신규 개설</span>
+            <span class="d">2026.03.19</span>
+          </a></li>
+          <li><a href="#">
+            <span class="tag">자료</span>
+            <span class="tt">근로장학생 지원서(양식) 게시</span>
+            <span class="d">2026.02.19</span>
+          </a></li>
+          <li><a href="#">
+            <span class="tag">민간자격</span>
+            <span class="tt">2026-1 ADR 조정사 2급 교육 일정 안내</span>
+            <span class="d">2026.02.13</span>
+          </a></li>
+        </ul>
+      </div>
+
+      <div class="center-box">
+        <div class="center-head">
+          <span class="t">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6.5"/><path d="M6 6c0-1 1-2 2-2s2 1 2 2-1 1.5-2 1.5V9M8 11.5v.3"/></svg>
+            자주하는 질문
+          </span>
+          <a href="#info" class="more">더보기 ›</a>
+        </div>
+        <ul class="center-list">
+          <li><a href="#"><span class="tag">FAQ</span><span class="tt">학점은행제란?</span><span class="d">2026.01.20</span></a></li>
+          <li><a href="#"><span class="tag">FAQ</span><span class="tt">학점은행제 이용 대상</span><span class="d">2026.01.20</span></a></li>
+          <li><a href="#"><span class="tag">FAQ</span><span class="tt">학점은행제와 일반 비학위과정의 차이</span><span class="d">2026.01.20</span></a></li>
+          <li><a href="#"><span class="tag">FAQ</span><span class="tt">PC와 모바일 진도 연동 방법 안내</span><span class="d">2025.10.26</span></a></li>
+          <li><a href="#"><span class="tag">FAQ</span><span class="tt">외국에서 대학을 졸업한 경우 학습자 등록</span><span class="d">2025.09.06</span></a></li>
+          <li><a href="#"><span class="tag">FAQ</span><span class="tt">온라인 학습자등록 및 학점인정신청 방법</span><span class="d">2025.04.02</span></a></li>
+          <li><a href="#"><span class="tag">FAQ</span><span class="tt">학점은행제 학습과정 학습비 환불 가능 여부</span><span class="d">2025.06.14</span></a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- (C) 우측 ── 관련 기관 배너 5개 -->
+    <aside aria-label="관련 기관">
+      <a href="https://www.nile.or.kr" target="_blank" rel="noopener" class="banner is-key">
+        <div class="banner-name">국가평생교육진흥원</div>
+        <div class="banner-sub">학점은행제 운영기관</div>
+        <div class="banner-domain">nile.or.kr ↗</div>
+      </a>
+      <a href="https://klai.or.kr" target="_blank" rel="noopener" class="banner is-parent">
+        <div class="banner-name">
+          <img src="assets/favicon.svg" alt="" class="b-fav">
+          한국법학진흥원
+        </div>
+        <div class="banner-sub">본원 · Parent Organization</div>
+        <div class="banner-domain">klai.or.kr ↗</div>
+      </a>
+      <a href="https://www.koreanbar.or.kr" target="_blank" rel="noopener" class="banner">
+        <div class="banner-name">대한변호사협회</div>
+        <div class="banner-sub">Korean Bar Association</div>
+        <div class="banner-domain">koreanbar.or.kr ↗</div>
+      </a>
+      <a href="https://www.moj.go.kr" target="_blank" rel="noopener" class="banner">
+        <div class="banner-name">법무부</div>
+        <div class="banner-sub">Ministry of Justice</div>
+        <div class="banner-domain">moj.go.kr ↗</div>
+      </a>
+      <a href="https://www.moe.go.kr" target="_blank" rel="noopener" class="banner">
+        <div class="banner-name">교육부</div>
+        <div class="banner-sub">Ministry of Education</div>
+        <div class="banner-domain">moe.go.kr ↗</div>
+      </a>
+    </aside>
+
+  </div>
+</section>
+
+<!-- ╔══════════════════════════════════════════════
+     3. 학점은행제 [준비중]
+     · 본 연수원 자체 운영은 평생학습시설 인가 후 진행
+     · 제도 자체의 설명은 ipacademy 패턴으로 충실히
+     · ipacademy 표준 7항목: 소개 / 인정절차 / 학위과정 /
+       학습설계 / 수강방법 / 학위수여 / 주의사항
+     ══════════════════════════════════════════════ -->
+<section class="credit" id="credit">
+  <div class="credit-in">
+
+    <!-- ── 헤드: COMING SOON 표시 + 인트로 ── -->
+    <div class="credit-head">
+      <div class="credit-stamp">
+        <span class="stamp-status">2027 OPENING · PLANNED</span>
+        <div class="stamp-big serif">140</div>
+        <span class="stamp-big-unit">Credits — 법학사 학위</span>
+        <p class="stamp-desc">
+          학점은행제는 「학점인정 등에 관한 법률」에 근거한 국가 평생교육 제도로, 학교 밖
+          학습을 학점으로 인정합니다. 본 연수원은 <strong>평생학습시설 인가 후 운영기관 등록</strong>을
+          진행할 예정이며, 등록 완료 시 본 연수원의 법학 과정이 정식 학점으로 인정됩니다.
+        </p>
+      </div>
+
+      <div class="credit-text">
+        <span class="label">CREDIT BANK SYSTEM</span>
+        <h2>학사학위로 이어지는<br>법학 평생학습의 경로</h2>
+        <p>
+          학점은행제는 학교 밖에서의 다양한 학습 경험을 학점으로 인정해주는 국가 제도입니다.
+          본 연수원에서 이수한 법학 과정이 정식 학점으로 인정될 수 있도록, 평생학습시설 인가
+          절차에 이어 학점은행제 운영기관 등록을 추진하고 있습니다.
+        </p>
+        <div class="credit-status">
+          <div class="s-label">현재 진행 상황</div>
+          <div class="s-text">
+            <strong>1단계.</strong> 한국법학진흥원 부설 연수원 설치 — <strong>완료</strong><br>
+            <strong>2단계.</strong> 「평생교육법」상 평생학습시설 인가 신청 — <strong>진행 중</strong><br>
+            <strong>3단계.</strong> 학점은행제 운영기관 등록 — <strong>예정</strong><br>
+            <strong>4단계.</strong> 법학 학점은행 과정 개설 — <strong>예정</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 01. 학점은행제 소개 ── -->
+    <article class="credit-sub" id="credit-intro">
+      <div class="credit-sub-head">
+        <span class="n serif">01</span>
+        <h3>학점은행제 소개</h3>
+        <span class="anchor">INTRODUCTION</span>
+      </div>
+      <div class="credit-sub-body">
+        <p>
+          <strong>학점은행제</strong>는 「학점인정 등에 관한 법률」에 의거하여 학교에서 뿐만 아니라 학교 밖에서
+          이루어지는 다양한 형태의 학습 및 자격을 학점으로 인정하고, 학점이 누적되어 일정 기준을 충족하면
+          학위 취득을 가능하게 함으로써 궁극적으로는 열린 교육사회, 평생학습사회를 구현하기 위한 제도입니다.
+        </p>
+        <p>
+          본 연수원은 평생학습시설 인가 후 <strong>학점은행제 평가인정 교육훈련기관</strong>으로 등록할 예정이며,
+          등록 완료 시 본 연수원에서 이수한 법학 과정이 국가가 인정하는 정식 학점이 됩니다. 누적 학점에 따라
+          <strong>법학사 학위</strong>(140학점) 또는 <strong>법학 전문학사</strong>(80학점) 취득이 가능합니다.
+        </p>
+        <p style="font-size:12.5px; color:var(--ink-3); padding-top:14px; border-top:1px solid var(--line); margin-top:18px;">
+          <strong>근거 법령</strong> — 「학점인정 등에 관한 법률」(법률 제17944호) · 동법 시행령 · 시행규칙 ·
+          국가평생교육진흥원 학점은행제 운영 규정
+        </p>
+      </div>
+    </article>
+
+    <!-- ── 02. 학점 인정 절차 ── -->
+    <article class="credit-sub" id="credit-process">
+      <div class="credit-sub-head">
+        <span class="n serif">02</span>
+        <h3>학점 인정 절차</h3>
+        <span class="anchor">PROCESS</span>
+      </div>
+      <div class="credit-sub-body">
+        <p style="margin-bottom:24px;">
+          학습자 등록부터 학위 취득까지 다음 6단계를 거칩니다. 학습자 등록과 학점 인정 신청은 국가평생교육진흥원
+          학점은행제 사이트에서 진행하며, 본 연수원은 수강 · 학습 · 이수증 발급 단계를 담당합니다.
+        </p>
+
+        <ol class="process">
+          <li class="p-step">
+            <div class="p-num">STEP 01</div>
+            <h4>학습자 등록</h4>
+            <p>국가평생교육진흥원에 학습자로 등록합니다.</p>
+          </li>
+          <li class="p-step is-key">
+            <div class="p-num">STEP 02</div>
+            <h4>수강 신청</h4>
+            <p>본 연수원에서 학점은행제 과정을 신청합니다.</p>
+          </li>
+          <li class="p-step is-key">
+            <div class="p-num">STEP 03</div>
+            <h4>학습 · 평가</h4>
+            <p>15주 온라인 학습 + 중간 · 기말 평가.</p>
+          </li>
+          <li class="p-step is-key">
+            <div class="p-num">STEP 04</div>
+            <h4>이수증 발급</h4>
+            <p>본 연수원이 학점 인정용 이수증을 발급합니다.</p>
+          </li>
+          <li class="p-step">
+            <div class="p-num">STEP 05</div>
+            <h4>학점 인정 신청</h4>
+            <p>국가평생교육진흥원에 학점 인정을 신청합니다.</p>
+          </li>
+          <li class="p-step">
+            <div class="p-num">STEP 06</div>
+            <h4>학위 신청</h4>
+            <p>요건 충족 시 학위 수여 신청을 진행합니다.</p>
+          </li>
+        </ol>
+      </div>
+    </article>
+
+    <!-- ── 03. 학위 취득 과정 ── -->
+    <article class="credit-sub" id="credit-degree">
+      <div class="credit-sub-head">
+        <span class="n serif">03</span>
+        <h3>학위 취득 과정 — 법학사</h3>
+        <span class="anchor">DEGREE</span>
+      </div>
+      <div class="credit-sub-body">
+        <p style="margin-bottom:24px;">
+          학사학위(법학사) 취득에 필요한 총 학점은 <strong>140학점</strong>이며, 다음과 같이 구성됩니다.
+          전공 60학점 이상, 교양 30학점 이상이 필수이며, 나머지는 일반 선택으로 채울 수 있습니다.
+        </p>
+
+        <div class="degree-wrap">
+          <div class="degree-figure">
+            <div class="degree-circle" aria-label="140학점 구성">
+              <svg viewBox="0 0 36 36">
+                <!-- 배경 원 -->
+                <circle cx="18" cy="18" r="15.915" fill="none" stroke="#EFEFEC" stroke-width="3"/>
+                <!-- 전공 60학점 (42.86%) — 0~154.3deg -->
+                <circle cx="18" cy="18" r="15.915" fill="none"
+                  stroke="#9A0F1B" stroke-width="3"
+                  stroke-dasharray="42.86 57.14" stroke-dashoffset="0"/>
+                <!-- 부전공 36학점 (25.71%) — 154.3~246.9deg -->
+                <circle cx="18" cy="18" r="15.915" fill="none"
+                  stroke="#7C0B14" stroke-width="3"
+                  stroke-dasharray="25.71 74.29" stroke-dashoffset="-42.86"/>
+                <!-- 교양 30학점 (21.43%) — 246.9~324.0deg -->
+                <circle cx="18" cy="18" r="15.915" fill="none"
+                  stroke="#0A0A0A" stroke-width="3"
+                  stroke-dasharray="21.43 78.57" stroke-dashoffset="-68.57"/>
+                <!-- 일반선택 14학점 (10%) — 324~360deg -->
+                <circle cx="18" cy="18" r="15.915" fill="none"
+                  stroke="#A8A8A8" stroke-width="3"
+                  stroke-dasharray="10 90" stroke-dashoffset="-90"/>
+              </svg>
+              <div class="center">
+                <div class="total serif">140</div>
+                <div class="total-l">CREDITS</div>
+              </div>
+            </div>
+            <p class="degree-cap"><strong>법학사 학위</strong><br>이수 학점 총합 (예정)</p>
+          </div>
+
+          <ul class="degree-list">
+            <li>
+              <span class="swatch is-major"></span>
+              <span class="k">전공 필수</span>
+              <span class="v">60학점</span>
+              <span class="d">헌법학·민법총칙·형법총론·행정법·민사소송법·형사소송법 등</span>
+            </li>
+            <li>
+              <span class="swatch is-minor"></span>
+              <span class="k">전공 선택</span>
+              <span class="v">36학점</span>
+              <span class="d">상법·노동법·국제법·세법·지적재산권법·환경법 등에서 선택</span>
+            </li>
+            <li>
+              <span class="swatch is-elective"></span>
+              <span class="k">교양 필수</span>
+              <span class="v">30학점</span>
+              <span class="d">법학개론·법사상사·법철학·법사회학 등 법학 교양</span>
+            </li>
+            <li>
+              <span class="swatch is-general"></span>
+              <span class="k">일반 선택</span>
+              <span class="v is-general-c">14학점</span>
+              <span class="d">관련 분야 자유 선택 (정치학·경제학·심리학 등)</span>
+            </li>
+            <li>
+              <span class="swatch is-thesis"></span>
+              <span class="k">졸업 논문</span>
+              <span class="v is-general-c">선택</span>
+              <span class="d">학위 신청 시 별도 평가 통과로 갈음 가능</span>
+            </li>
+          </ul>
+        </div>
+        <p style="font-size:12px; color:var(--ink-3); padding-top:18px; border-top:1px solid var(--line); margin-top:24px; margin-bottom:0;">
+          ※ 위 구성은 예정안이며, 평생학습시설 인가 및 학점은행제 운영기관 등록 시점에 국가평생교육진흥원 평가인정 기준에 따라 확정됩니다.
+          전문학사(법학)는 총 <strong>80학점</strong>으로 구성됩니다.
+        </p>
+      </div>
+    </article>
+
+    <!-- ── 04~07. 학습설계 · 수강방법 · 학위수여 · 주의사항 (2x2) ── -->
+    <article class="credit-sub" id="credit-design">
+      <div class="credit-sub-head">
+        <span class="n serif">04 — 07</span>
+        <h3>학습 설계 · 수강 방법 · 학위 수여 · 주의사항</h3>
+        <span class="anchor">GUIDE</span>
+      </div>
+      <div class="credit-sub-body">
+        <div class="info-cols">
+
+          <div class="info-block" id="credit-design-sub">
+            <h4><span class="b-num">04</span>학습 설계</h4>
+            <ul>
+              <li><strong>입학 전</strong> 학습 설계 상담을 통해 학년별 이수 계획을 수립합니다.</li>
+              <li>전공 60학점은 보통 <strong>3년</strong>에 걸쳐 분산 이수하는 것을 권장합니다.</li>
+              <li>한 학기 최대 <strong>24학점</strong>까지 신청 가능합니다.</li>
+              <li>타 대학·기관에서 취득한 학점은 일정 한도 내에서 인정될 수 있습니다.</li>
+              <li>학습 설계 상담은 <strong>무료</strong>로 제공됩니다.</li>
+            </ul>
+          </div>
+
+          <div class="info-block" id="credit-method">
+            <h4><span class="b-num">05</span>수강 방법</h4>
+            <ul>
+              <li>전 과정 <strong>온라인 학습</strong>으로 진행됩니다.</li>
+              <li>1학기 = <strong>15주</strong>, 주당 평균 3시간 학습.</li>
+              <li>PC · 모바일 자유 수강 (진도 동기화).</li>
+              <li>중간 · 기말 평가, 과제 제출 필수.</li>
+              <li>출석 인정 기준 — 진도율 <strong>80% 이상</strong>.</li>
+              <li>학기 중 일부 과목은 <strong>오프라인 보충 강의</strong> 운영 가능.</li>
+            </ul>
+          </div>
+
+          <div class="info-block" id="credit-award">
+            <h4><span class="b-num">06</span>학위 수여</h4>
+            <ul>
+              <li><strong>법학사</strong> — 누적 140학점 (전공 60 · 교양 30 이상 필수)</li>
+              <li><strong>법학 전문학사</strong> — 누적 80학점 (전공 45 · 교양 15 이상)</li>
+              <li>학점 인정 신청은 국가평생교육진흥원 학점은행제 사이트에서 진행.</li>
+              <li>학위 수여식은 연 1회(2월) 본원에서 거행됩니다.</li>
+              <li>학위증은 <strong>교육부장관</strong> 명의로 수여됩니다.</li>
+            </ul>
+          </div>
+
+          <div class="info-block is-warn" id="credit-notes">
+            <h4><span class="b-num">07</span>주의사항</h4>
+            <ul>
+              <li>학습자 등록 및 학점 인정 신청 시 <strong>별도 수수료</strong>가 발생합니다(국가평생교육진흥원 고지).</li>
+              <li>동일 과목 중복 이수는 학점으로 인정되지 않습니다.</li>
+              <li>학적 보유 학교의 학습은 학점은행제로 동시 인정될 수 없습니다.</li>
+              <li>휴학·중단 시 누적 학점은 <strong>5년간</strong> 유효합니다.</li>
+              <li>인가 및 운영기관 등록 완료 전 수강한 비학위과정은 학점 인정 대상이 아닙니다.</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </article>
+
+    <!-- ── 학점은행제 FAQ ── -->
+    <article class="credit-sub credit-faq" id="credit-faq">
+      <div class="credit-sub-head">
+        <span class="n serif">FAQ</span>
+        <h3>학점은행제 자주 묻는 질문</h3>
+        <span class="anchor">QUESTIONS</span>
+      </div>
+      <div class="credit-sub-body">
+        <dl>
+          <dt class="is-open">학점은행제는 일반 대학과 무엇이 다른가요? <span class="arr">+</span></dt>
+          <dd class="is-open">
+            학점은행제는 정규 대학에 입학하지 않고도 학사학위를 취득할 수 있는 국가 평생교육 제도입니다.
+            정규 대학과 달리 <strong>학기 단위로 자유롭게 학점을 누적</strong>할 수 있고, 학적 · 졸업 연한의
+            제약이 없습니다. 학위증은 정규 대학과 마찬가지로 교육부장관 명의로 수여되며 효력이 동일합니다.
+          </dd>
+
+          <dt>본 연수원의 학점은행제는 언제 운영을 시작하나요? <span class="arr">+</span></dt>
+          <dd>
+            본 연수원은 현재 「평생교육법」상 평생학습시설 인가 절차를 진행 중이며, 인가 완료 후 학점은행제
+            운영기관 등록을 신청할 예정입니다. 두 단계를 거쳐야 정식 운영이 가능하므로, 운영 개시 시점은
+            확정되는 대로 공지사항을 통해 안내드립니다.
+          </dd>
+
+          <dt>인가 전에 수강한 비학위과정은 학점으로 인정되나요? <span class="arr">+</span></dt>
+          <dd>
+            <strong>인정되지 않습니다.</strong> 학점은행제 학점 인정은 평가인정 교육훈련기관으로 등록된 시점
+            이후의 학습부터 적용됩니다. 인가 전 수강한 비학위과정은 본 연수원의 수료증으로만 인정됩니다.
+          </dd>
+
+          <dt>변호사 시험 합격자도 학점은행제로 학사학위를 취득할 수 있나요? <span class="arr">+</span></dt>
+          <dd>
+            법학전문대학원 졸업자는 이미 석사학위(법학전문석사)를 보유하므로 학점은행제 법학사 취득의 실익은
+            적습니다. 다만 학부 비법학 전공자가 법학적 소양을 체계적으로 정리하고자 하는 경우 학점은행제를
+            활용할 수 있습니다.
+          </dd>
+
+          <dt>학점은행제로 취득한 법학사 학위로 변호사 시험에 응시할 수 있나요? <span class="arr">+</span></dt>
+          <dd>
+            변호사 시험은 법학전문대학원 졸업자에게만 응시 자격이 부여됩니다. 학점은행제 법학사 학위는
+            법학전문대학원 <strong>입학 자격</strong>(학사학위 보유)을 충족하기 위한 경로로 활용될 수 있으며,
+            직접 변호사 시험에 응시할 수 있는 자격은 아닙니다.
+          </dd>
+
+          <dt>학습비와 환불 규정은 어떻게 되나요? <span class="arr">+</span></dt>
+          <dd>
+            학점은행제 과정 학습비는 1과목(3학점) 기준 <strong>198,000원</strong>입니다(예정 · 부가세 포함).
+            환불 규정은 「평생교육법 시행령」을 따르며, 학사일정에 따라 별도 규정이 적용됩니다.
+            <a href="#rules" style="color:var(--crimson); font-weight:600">운영규정</a> 페이지에서 자세히 확인하실 수 있습니다.
+          </dd>
+        </dl>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ╔══════════════════════════════════════════════
+     6. 법학 전문 자료실 (외부 DB 5개)
+     · ipacademy "지식재산전문 도서관안내" 패턴 차용
+     · 국가법령정보센터 · 종합법률정보 · 헌재 · 입법예고 · 법제연구원
+     ══════════════════════════════════════════════ -->
+<section class="resources" id="resources">
+  <div class="resources-in">
+    <div class="sec-head">
+      <div>
+        <span class="sec-label">RESOURCES</span>
+        <h2 class="sec-title">법학 전문 자료실</h2>
+      </div>
+      <p class="sub">법학 학습에 필요한 외부 데이터베이스 안내. 본 연수원 회원은 자료실 안내 페이지에서 통합 접근할 수 있습니다.</p>
+    </div>
+
+    <div class="res-grid">
+      <a href="https://www.law.go.kr" target="_blank" rel="noopener" class="res-card">
+        <div class="res-num">01</div>
+        <div class="res-name">국가법령정보센터</div>
+        <div class="res-en">law.go.kr</div>
+        <p class="res-desc">법령 · 자치법규 · 행정규칙 통합 검색</p>
+        <span class="res-go">바로가기 ↗</span>
+      </a>
+      <a href="https://glaw.scourt.go.kr" target="_blank" rel="noopener" class="res-card">
+        <div class="res-num">02</div>
+        <div class="res-name">종합법률정보</div>
+        <div class="res-en">대법원 · scourt.go.kr</div>
+        <p class="res-desc">판례 · 법령 · 조약</p>
+        <span class="res-go">바로가기 ↗</span>
+      </a>
+      <a href="https://search.ccourt.go.kr" target="_blank" rel="noopener" class="res-card">
+        <div class="res-num">03</div>
+        <div class="res-name">헌법재판소 판례검색</div>
+        <div class="res-en">ccourt.go.kr</div>
+        <p class="res-desc">결정문 · 헌법 판례</p>
+        <span class="res-go">바로가기 ↗</span>
+      </a>
+      <a href="https://pal.assembly.go.kr" target="_blank" rel="noopener" class="res-card">
+        <div class="res-num">04</div>
+        <div class="res-name">국회 입법예고</div>
+        <div class="res-en">국회 · assembly.go.kr</div>
+        <p class="res-desc">법률안 · 입법예고</p>
+        <span class="res-go">바로가기 ↗</span>
+      </a>
+      <a href="https://www.klri.re.kr" target="_blank" rel="noopener" class="res-card">
+        <div class="res-num">05</div>
+        <div class="res-name">한국법제연구원</div>
+        <div class="res-en">klri.re.kr</div>
+        <p class="res-desc">법제 연구 자료</p>
+        <span class="res-go">바로가기 ↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ╔══════════════════════════════════════════════
+     4. 교육과정 (비학위 / 민간자격 / 전문가)
+     · 4그리드 카드. data-track 별 필터.
+     ══════════════════════════════════════════════ -->
+<section class="tracks" id="non-degree">
+  <div class="tracks-in">
+    <div class="sec-head">
+      <div>
+        <span class="sec-label">CURRICULUM</span>
+        <h2 class="sec-title">교육과정</h2>
+      </div>
+      <p class="sub">비학위과정 · 민간자격 · 전문가 과정으로 구성됩니다. 학점은행제 과정은 인가 완료 후 별도 개설 예정입니다.</p>
+    </div>
+
+    <div class="track-tabs" role="tablist">
+      <button class="track-tab is-active" data-filter="all">전체 <span class="ct">12</span></button>
+      <button class="track-tab" data-filter="non">비학위과정 <span class="ct">5</span></button>
+      <button class="track-tab" data-filter="cert">민간자격 <span class="ct">4</span></button>
+      <button class="track-tab" data-filter="expert">전문가과정 <span class="ct">3</span></button>
+    </div>
+
+    <div class="course-list" id="courseList">
+
+      <!-- 비학위과정 -->
+      <article class="course" data-track="non" data-color="ink">
+        <div class="course-thumb">
+          <div class="t-meta"><span>NON · 비학위</span><span class="t-year">2026</span></div>
+          <div class="t-num serif">101</div>
+        </div>
+        <div class="course-body">
+          <div class="course-pcode">2026-101 · 비학위</div>
+          <h3 class="course-title">법학개론 ― 법의 체계와 사고방식</h3>
+          <div class="course-meta">
+            <span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 4v4l3 2"/></svg> 1.5시간</span>
+            <span>8주</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="course" data-track="non" data-color="crimson">
+        <div class="course-thumb">
+          <div class="t-meta"><span>NON · 비학위</span><span class="t-year">2026</span></div>
+          <div class="t-num serif">104</div>
+        </div>
+        <div class="course-body">
+          <div class="course-pcode">2026-104 · 비학위</div>
+          <h3 class="course-title">헌법 연습 ― 기본권 사례 검토</h3>
+          <div class="course-meta">
+            <span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 4v4l3 2"/></svg> 2시간</span>
+            <span>12주</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="course" data-track="non" data-color="ink">
+        <div class="course-thumb">
+          <div class="t-meta"><span>NON · 비학위</span><span class="t-year">2026</span></div>
+          <div class="t-num serif">107</div>
+        </div>
+        <div class="course-body">
+          <div class="course-pcode">2026-107 · 비학위</div>
+          <h3 class="course-title">민법 연습 ― 채권 · 물권 사례</h3>
+          <div class="course-meta">
+            <span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 4v4l3 2"/></svg> 2시간</span>
+            <span>14주</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="course" data-track="non" data-color="warm">
+        <div class="course-thumb">
+          <div class="t-meta"><span>NON · 비학위</span><span class="t-year">2026</span></div>
+          <div class="t-num serif">110</div>
+        </div>
+        <div class="course-body">
+          <div class="course-pcode">2026-110 · 비학위</div>
+          <h3 class="course-title">형법 연습 ― 구성요건 검토</h3>
+          <div class="course-meta">
+            <span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 4v4l3 2"/></svg> 2시간</span>
+            <span>12주</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="course" data-track="non" data-color="cream">
+        <div class="course-thumb">
+          <div class="t-meta"><span>YOUNG · 공익</span><span class="t-year">2026</span></div>
+          <div class="t-num serif">150</div>
+        </div>
+        <div class="course-body">
+          <div class="course-pcode">2026-150 · 공익 · 무료</div>
+          <h3 class="course-title">청년변호사 시리즈 ― 사건수임 실무</h3>
+          <div class="course-meta">
+            <span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 4v4l3 2"/></svg> 1.5시간</span>
+            <span>12강</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 민간자격 -->
+      <article class="course" data-track="cert" data-color="cool" id="certs">
+        <div class="course-thumb">
+          <div class="t-meta"><span>CERT · 민간자격</span><span class="t-year">2026</span></div>
+          <div class="t-num serif">310</div>
+        </div>
+        <div class="course-body">
+          <div class="course-pcode">2026-310 · 민간자격</div>
+          <h3 class="course-title">법령정보분석사 양성 과정</h3>
+          <div class="course-meta">
+            <span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 4v4l3 2"/></svg> 48시간</span>
+            <span>자격 시험</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="course" data-track="cert" data-color="warm">
+        <div class="course-thumb">
+          <div class="t-meta"><span>CERT · 민간자격</span><span class="t-year">2026</span></div>
+          <div class="t-num serif">301</div>
+        </div>
+        <div class="course-body">
+          <div class="course-pcode">2026-301 · 민간자격</div>
+          <h3 class="course-title">개인회생 · 파산 상담사</h3>
+          <div class="course-meta">
+            <span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 4v4l3 2"/></svg> 30시간</span>
+            <span>자격 시험</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="course" data-track="cert" data-color="brown">
+        <div class="course-thumb">
+          <div class="t-meta"><span>CERT · 민간자격</span><span class="t-year">2026</span></div>
+          <div class="t-num serif">315</div>
+        </div>
+        <div class="course-body">
+          <div class="course-pcode">2026-315 · 민간자격</div>
+          <h3 class="course-title">ADR 조정사 ― 분쟁해결 실무</h3>
+          <div class="course-meta">
+            <span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 4v4l3 2"/></svg> 32시간</span>
+            <span>자격 시험</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="course" data-track="cert" data-color="ink">
+        <div class="course-thumb">
+          <div class="t-meta"><span>CERT · 민간자격</span><span class="t-year">2026</span></div>
+          <div class="t-num serif">320</div>
+        </div>
+        <div class="course-body">
+          <div class="course-pcode">2026-320 · 민간자격</div>
+          <h3 class="course-title">등기 · 등록 실무자 과정</h3>
+          <div class="course-meta">
+            <span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 4v4l3 2"/></svg> 24시간</span>
+            <span>수료증</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 전문가 -->
+      <article class="course" data-track="expert" data-color="ink" id="expert">
+        <div class="course-thumb">
+          <div class="t-meta"><span>EXP · 전문가</span><span class="t-year">2026</span></div>
+          <div class="t-num serif">401</div>
+        </div>
+        <div class="course-body">
+          <div class="course-pcode">2026-401 · 전문가</div>
+          <h3 class="course-title">기업법무 실무 과정 ― 계약·자문</h3>
+          <div class="course-meta">
+            <span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 4v4l3 2"/></svg> 40시간</span>
+            <span>변호사 대상</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="course" data-track="expert" data-color="cool">
+        <div class="course-thumb">
+          <div class="t-meta"><span>EXP · 전문가</span><span class="t-year">2026</span></div>
+          <div class="t-num serif">410</div>
+        </div>
+        <div class="course-body">
+          <div class="course-pcode">2026-410 · 전문가</div>
+          <h3 class="course-title">리걸테크와 AI 시대의 법률 실무</h3>
+          <div class="course-meta">
+            <span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 4v4l3 2"/></svg> 16시간</span>
+            <span>변호사 대상</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="course" data-track="expert" data-color="crimson">
+        <div class="course-thumb">
+          <div class="t-meta"><span>EXP · 전문가</span><span class="t-year">2026</span></div>
+          <div class="t-num serif">420</div>
+        </div>
+        <div class="course-body">
+          <div class="course-pcode">2026-420 · 전문가</div>
+          <h3 class="course-title">국제중재 실무 과정</h3>
+          <div class="course-meta">
+            <span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 4v4l3 2"/></svg> 36시간</span>
+            <span>변호사 대상</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ╔══════════════════════════════════════════════
+     5. 운영규정 (자격관리 + 환불)
+     ══════════════════════════════════════════════ -->
+<section class="rules" id="rules">
+  <div class="rules-in">
+    <div class="sec-head">
+      <div>
+        <span class="sec-label">REGULATIONS</span>
+        <h2 class="sec-title">운영규정</h2>
+      </div>
+      <p class="sub">평생학습시설 운영의 투명성을 위해 자격관리 · 환불 규정을 공시합니다. 학습비는 <a href="#info" style="color:var(--crimson); font-weight:600">정보광장</a>에서 확인하실 수 있습니다.</p>
+    </div>
+
+    <div class="rules-grid">
+
+      <article class="rules-card">
+        <div class="rules-card-h">
+          <span class="n serif">01</span>
+          <span>자격관리 규정</span>
+          <span class="basis">「평생교육법」</span>
+        </div>
+        <div class="rules-table">
+          <div class="r"><div class="k">수강 자격</div><div class="v">본 사이트에 회원으로 가입한 자. 일부 과정(민간자격 · 공익)은 별도 자격 요건이 있을 수 있습니다.</div></div>
+          <div class="r"><div class="k">수료 기준</div><div class="v">강의 진도율 <strong>80% 이상</strong>. 민간자격 과정은 별도 평가(과제·시험) 통과를 요구합니다.</div></div>
+          <div class="r"><div class="k">수료증 발급</div><div class="v">기준 충족 시 한국법학진흥원 부설 연수원장 명의의 수료증을 발급합니다.</div></div>
+          <div class="r"><div class="k">학습 기간</div><div class="v">비학위 <strong>180일</strong> · 민간자격 <strong>90–180일</strong> · 전문가 <strong>90–180일</strong>.</div></div>
+          <div class="r"><div class="k">자격 정지</div><div class="v">부정 수강 적발 시 자격이 정지되며 기 납부 학습비는 환불되지 않습니다.</div></div>
+        </div>
+      </article>
+
+      <article class="rules-card">
+        <div class="rules-card-h">
+          <span class="n serif">02</span>
+          <span>환불 규정</span>
+          <span class="basis">「평생교육법 시행령」</span>
+        </div>
+        <div class="rules-table">
+          <div class="r"><div class="k">수강 개시 전</div><div class="v"><strong>전액 환불</strong>. 신청 취소 즉시 처리됩니다.</div></div>
+          <div class="r"><div class="k">1/3 경과 전</div><div class="v">기 납부 학습비의 <strong>2/3</strong> 환불.</div></div>
+          <div class="r"><div class="k">1/2 경과 전</div><div class="v">기 납부 학습비의 <strong>1/2</strong> 환불.</div></div>
+          <div class="r"><div class="k">1/2 경과 후</div><div class="v">환불 불가. 단, 본원 사정으로 중단 시 잔여기간 비례 환불.</div></div>
+          <div class="r"><div class="k">처리 기간</div><div class="v">신청일로부터 영업일 기준 <strong>7일 이내</strong>에 처리됩니다.</div></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ╔══════════════════════════════════════════════
+     푸터 (고대 패턴 — 매우 단순)
+     ══════════════════════════════════════════════ -->
+<footer>
+  <div class="foot-top">
+    <div class="foot-top-in">
+      <a href="#" class="is-primary">개인정보 처리방침</a>
+      <span class="foot-sep">|</span>
+      <a href="#">홈페이지 이용약관</a>
+      <span class="foot-sep">|</span>
+      <a href="#rules">운영규정</a>
+      <span class="foot-sep">|</span>
+      <a href="#info">학습비 · 환불 안내</a>
+      <span class="foot-sep">|</span>
+      <a href="#">이메일 무단수집 거부</a>
+      <span class="foot-sep">|</span>
+      <a href="https://klai.or.kr">본원 홈페이지 ↗</a>
+    </div>
+  </div>
+
+  <div class="foot-mid">
+    <div class="foot-info">
+      (03142) 서울 종로구 광화문 변호사회관 29호, <strong>한국법학진흥원 부설 연수원</strong> · <strong>대표자</strong> ○○○<br>
+      <strong>입학상담</strong> 02-XXXX-XXXX · <strong>비학위과정</strong> 02-XXXX-XXXX · <strong>민간자격</strong> 02-XXXX-XXXX · <strong>FAX</strong> 02-XXXX-XXXX<br>
+      <strong>고유번호</strong> 110-82-89098 · <strong>E-mail</strong> edu@klai.or.kr · <strong>평생학습시설</strong> 인가 준비 중 (「평생교육법」 제2조)
+    </div>
+    <div class="foot-emblem">
+      <img src="assets/klai_logo.svg" alt="한국법학진흥원" class="foot-logo">
+      <div class="foot-emblem-sub">
+        <span class="ko">연수원</span>
+        <span class="en">Continuing Education</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot-org">
+    <div class="org-tag">
+      <span class="lbl">운영주관</span>
+      <span class="nm">한국법학진흥원</span>
+    </div>
+    <div class="org-tag">
+      <span class="lbl is-sub">후원</span>
+      <span class="nm">법무부 · 대한변호사협회 · 변호사회관</span>
+    </div>
+    <div class="org-tag" style="margin-left:auto">
+      <span class="nm" style="color:var(--ink-3); font-size:11.5px; font-weight:500">평생학습시설 인가 후 — <strong style="color:var(--ink-2)">교육부 평가인정 교육훈련기관</strong> 등록 예정</span>
+    </div>
+  </div>
+
+  <div class="foot-copy">
+    Copyright © 2026 KLAI Institute for Continuing Education. ALL RIGHTS RESERVED.
+  </div>
+</footer>
+
+<script>
+  // ── 슬라이더 ─────────────────────────────────
+  (function(){
+    const slides = document.getElementById('slides');
+    const dots = document.querySelectorAll('#sliderDots button');
+    const prev = document.getElementById('prevSlide');
+    const next = document.getElementById('nextSlide');
+    if(!slides) return;
+    let i = 0;
+    const total = 3;
+    const go = (n) => {
+      i = (n + total) % total;
+      slides.style.transform = `translateX(-${i * 33.333}%)`;
+      dots.forEach((d, idx) => d.classList.toggle('is-on', idx === i));
+    };
+    prev && prev.addEventListener('click', () => go(i - 1));
+    next && next.addEventListener('click', () => go(i + 1));
+    dots.forEach(d => d.addEventListener('click', e => go(parseInt(e.target.dataset.i))));
+    // 자동 슬라이드
+    let auto = setInterval(() => go(i + 1), 6000);
+    [prev, next, ...dots].forEach(el => el && el.addEventListener('click', () => {
+      clearInterval(auto);
+      auto = setInterval(() => go(i + 1), 6000);
+    }));
+  })();
+
+  // ── 메가메뉴 토글 (::: 격자 버튼) ────────────
+  (function(){
+    const btn = document.getElementById('gridToggle');
+    const mega = document.getElementById('megamenu');
+    if(!btn || !mega) return;
+    btn.addEventListener('click', () => mega.classList.toggle('is-open'));
+    // 외부 클릭 시 닫기
+    document.addEventListener('click', (e) => {
+      if(!btn.contains(e.target) && !mega.contains(e.target)) {
+        mega.classList.remove('is-open');
+      }
+    });
+  })();
+
+  // ── 교육과정 분야 필터링 ─────────────────────
+  (function(){
+    const tabs = document.querySelectorAll('.track-tab');
+    const list = document.getElementById('courseList');
+    if(!list) return;
+    const cards = list.querySelectorAll('.course');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('is-active'));
+        tab.classList.add('is-active');
+        const f = tab.dataset.filter;
+        cards.forEach(c => {
+          c.classList.toggle('is-hidden', f !== 'all' && c.dataset.track !== f);
+        });
+  // ── 학점은행제 FAQ 아코디언 ──────────────────
+  (function(){
+    const dts = document.querySelectorAll('.credit-faq dt');
+    dts.forEach(dt => {
+      dt.addEventListener('click', () => {
+        const dd = dt.nextElementSibling;
+        const isOpen = dt.classList.contains('is-open');
+        // 다른 항목 모두 닫기
+        dts.forEach(other => {
+          other.classList.remove('is-open');
+          if(other.nextElementSibling) other.nextElementSibling.classList.remove('is-open');
+        });
+        // 현재 항목 토글
+        if(!isOpen){
+          dt.classList.add('is-open');
+          if(dd) dd.classList.add('is-open');
+        }
+      });
+    });
+  })();
+</script>
+
+</body>
+</html>
